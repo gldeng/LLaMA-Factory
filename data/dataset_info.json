@@ -5,6 +5,9 @@
   "alpaca_cosmos_ontology_1k": {
     "file_name": "alpaca_cosmos_ontology_1k.json"
   },
+  "alpaca_cosmos_ontology_2k": {
+    "file_name": "alpaca_cosmos_ontology_2k.json"
+  },
   "alpaca_en_demo": {
     "file_name": "alpaca_en_demo.json"
   },
