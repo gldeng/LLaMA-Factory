@@ -1,0 +1,30 @@
+### model
+model_name_or_path: Qwen/Qwen2-7B-Instruct
+adapter_name_or_path: saves/Qwen2-7B-Instruct/lora/train_2025-05-05-16-05-25  # Or your-org/qwen2-7b-finetuned
+trust_remote_code: true
+
+### method
+# finetuning_type: lora
+
+### dataset
+task: mmlu_test  # choices: [mmlu_test, ceval_validation, cmmlu_test]
+template: fewshot
+lang: en
+n_shot: 5
+
+### output
+save_dir: saves/Qwen2-7B-Instruct/lora/train_2025-05-05-16-05-25/evaluation_output
+
+### eval
+batch_size: 4
+
+
+### Uploaded
+# https://huggingface.co/portkeysg/qwen2-7b-instruct-cosmos-ontology/commit/ac4cefd69f20bd03d783a6583ca9352a4dd4b561
+
+### MMLU Test
+#         Average: 68.79
+#            STEM: 62.59
+# Social Sciences: 78.84
+#      Humanities: 62.91
+#           Other: 73.57
